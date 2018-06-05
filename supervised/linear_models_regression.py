@@ -1,5 +1,5 @@
-'''Regression'''
-# Linear regression
+
+'''Linear regression'''
 
 from sklearn.linear_model import LinearRegression
 import mglearn
@@ -23,7 +23,7 @@ print("Training set score (linear regression): {:.2f} ".format(lr.score(X_train,
 print("Test set score (linear regression): {:.2f}".format(lr.score(X_test, y_test)))
 
 
-#ridge regression
+'''Ridge regression'''
 
 from sklearn.linear_model import Ridge
 ridge= Ridge().fit(X_train, y_train)
@@ -42,7 +42,7 @@ print("Training set score (Ridge): {:.2f} ".format(ridge2.score(X_train, y_train
 print("Test set score (Ridge): {:.2f}".format(ridge2.score(X_test, y_test)))
 
 
-#lasso
+'''Lasso'''
 
 from sklearn.linear_model import Lasso
 import numpy as np
